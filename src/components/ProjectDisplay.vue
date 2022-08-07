@@ -1,3 +1,7 @@
+<script setup>
+import GithubButton from './GithubButton.vue'
+</script>
+
 <script>
 export default {
   props: ["project", 'colors'],
@@ -13,6 +17,7 @@ export default {
   <h2>{{project.title}}</h2>
   <p>{{project.description}}</p>
   <img :src="this.project.image" :alt="this.project.imageAlt">
+  <GithubButton :link="this.project.link" :colors="this.colors"></GithubButton>
 </div>
 
 </template>
