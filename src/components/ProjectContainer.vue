@@ -4,9 +4,9 @@ import projectData from '../data/projects.json'
 </script>
 <script>
 export default {
+  props: ['colors'],
   data() {
     return {
-      colors: ["#8ACB88", "#CAE5FF", "#2E4057", "#ACEDFF", "#697A21"],
       projects: projectData
     }
   }
