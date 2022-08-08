@@ -1,10 +1,10 @@
 <script setup>
-import GithubButton from './GithubButton.vue'
+import ImgTipButton from './ImgTipButton.vue';
 </script>
 
 <script>
 export default {
-  props: ["project", 'colors'],
+  props: ["project", 'colors', 'gitImg'],
   data() {
     return {
     }
@@ -17,7 +17,7 @@ export default {
   <h2>{{project.title}}</h2>
   <p>{{project.description}}</p>
   <img :src="this.project.image" :alt="this.project.imageAlt">
-  <GithubButton :link="this.project.link" :colors="this.colors"></GithubButton>
+  <ImgTipButton :link="this.project.link" :colors="this.colors" tooltip="View On GitHub" :img="this.gitImg"></ImgTipButton>
 </div>
 
 </template>

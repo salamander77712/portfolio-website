@@ -1,6 +1,6 @@
 <script>
 export default {
-  props: ['link', 'colors'],
+  props: ['link', 'colors', 'tooltip', 'img'],
   data() {
     return {
     }
@@ -10,10 +10,10 @@ export default {
 
 <template>
   <span class='tooltip'>
-    <a :href="this.link">
-    <img src="../assets/GitHub-Mark-32px.png">
+    <a :href="this.link" target="_blank">
+    <img :src="this.img">
     </a>
-    <p class='tooltiptext'>View on GitHub</p>
+    <p class='tooltiptext'>{{this.tooltip}}</p>
   </span>
 </template>
 

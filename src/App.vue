@@ -7,14 +7,13 @@ import settingsData from './data/settings.json'
 export default {
   data() {
     return {
-      settings: settingsData
     }
   }
 }
 </script>
 
 <template>
-  <ProjectContainer :colors="this.settings.colors"></ProjectContainer>
+  <ProjectContainer :settings="this.settingsData"></ProjectContainer>
 </template>
 
 <style scoped>
