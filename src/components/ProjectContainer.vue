@@ -1,13 +1,11 @@
 <script setup>
 import ProjectDisplay from './ProjectDisplay.vue';
-import projectData from '../data/projects.json';
 </script>
 <script>
 export default {
-  props: ['settings'],
+  props: ['settings', 'projects'],
   data() {
     return {
-      projects: projectData
     }
   }
 }
@@ -15,7 +13,7 @@ export default {
 
 <template>
   <div class="container">
-    <div v-for="project in projectData" :key="project.id">
+    <div v-for="project in this.projects" :key="project.id">
       <ProjectDisplay :project="project" :colors="this.settings.colors" :gitImg="this.settings.gitImg"></ProjectDisplay>
     </div>
   </div>

@@ -5,7 +5,19 @@
         "description":"According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little.",
         "image":"./src/assets/pickle.png",
         "imageAlt":"pickle",
-        "link":"https://example.com"
+        "link":"https://example.com",
+        "meta": [
+            {
+                "name":"title",
+                "type":"string",
+                "value":"Test"
+            },
+            {
+                "name":"description",
+                "type":"string",
+                "value":"Bee Movie Script"
+            }
+        ]
     },
     {
         "id":1,
@@ -13,6 +25,18 @@
         "description":"According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little.",
         "image":"./src/assets/pickle.png",
         "imageAlt":"pickle",
-        "link":"https://example.com"
+        "link":"https://example.com",
+        "meta": [
+            {
+                "name":"title",
+                "type":"string",
+                "value":"Test2"
+            },
+            {
+                "name":"description",
+                "type":"string",
+                "value":"Bee Movie Script2"
+            }
+        ]
     }
 ]
