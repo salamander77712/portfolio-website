@@ -68,7 +68,7 @@ export default {
 
 <template>
 <div>
-  <button @click="this.hidden = !this.hidden">Search</button>
+  <button @click="this.hidden = !this.hidden" :hidden="true">Search</button>
   <div class="search" :hidden="this.hidden">
     <DropdownSelect name="metaType" :data="this.metasNamesOnly" @newValue="this.updateSelectedSearch"></DropdownSelect>
   </div>

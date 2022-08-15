@@ -1,11 +1,15 @@
 [
     {
         "id":0,
-        "title":"Test",
-        "description":"According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little.",
+        "title":"Crab App",
+        "description":"Simple clicker game about harvesting crabs",
         "image":"./src/assets/pickle.png",
         "imageAlt":"pickle",
-        "link":"https://example.com",
+        "link":"https://github.com/salamander77712/Testing-main/tree/master/Vue.js/Crab%20App",
+        "secondButton" : "true",
+        "secondLink" : "https://example.com",
+        "secondTip" : "Play In Browser",
+        "secondImage" : "./src/assets/crabapp.png",
         "meta": [
             {
                 "name":"title",
@@ -16,26 +20,6 @@
                 "name":"description",
                 "type":"string",
                 "value":"Bee Movie Script"
-            }
-        ]
-    },
-    {
-        "id":1,
-        "title":"Test2",
-        "description":"According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little.",
-        "image":"./src/assets/pickle.png",
-        "imageAlt":"pickle",
-        "link":"https://example.com",
-        "meta": [
-            {
-                "name":"title",
-                "type":"string",
-                "value":"Test2"
-            },
-            {
-                "name":"description",
-                "type":"string",
-                "value":"Bee Movie Script2"
             }
         ]
     }
