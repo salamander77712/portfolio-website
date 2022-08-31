@@ -2,11 +2,11 @@
 import ProjectContainer from './ProjectContainer.vue';
 import DropdownSelect from './DropdownSelect.vue';
 import projectData from '../data/projects.json';
+import settings from '../data/settings.json';
 </script>
 
 <script>
 export default {
-  props: ['settings'],
   emits: ['newValue'],
   data() {
     return {
@@ -68,11 +68,7 @@ export default {
 
 <template>
 <div>
-  <button @click="this.hidden = !this.hidden" :hidden="true">Search</button>
-  <div class="search" :hidden="this.hidden">
-    <DropdownSelect name="metaType" :data="this.metasNamesOnly" @newValue="this.updateSelectedSearch"></DropdownSelect>
-  </div>
-  <ProjectContainer :settings="this.settings" :projects="this.projectsFiltered"></ProjectContainer>
+  <ProjectContainer :settings="settings" :projects="projectsFiltered"></ProjectContainer>
 </div>
 </template>
 

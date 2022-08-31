@@ -3,13 +3,13 @@
         "id":0,
         "title":"Crab App",
         "description":"Simple clicker game about harvesting crabs",
-        "image":"./src/assets/pickle.png",
+        "image":"./assets/pickle.png",
         "imageAlt":"pickle",
         "link":"https://github.com/salamander77712/Testing-main/tree/master/Vue.js/Crab%20App",
         "secondButton" : "true",
         "secondLink" : "https://example.com",
         "secondTip" : "Play In Browser",
-        "secondImage" : "./src/assets/crabapp.png",
+        "secondImage" : "./assets/crabapp.png",
         "meta": [
             {
                 "name":"title",

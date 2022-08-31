@@ -16,8 +16,8 @@ export default {
 <div>
   <h2>{{project.title}}</h2>
   <p>{{project.description}}</p>
-  <img :src="this.project.image" :alt="this.project.imageAlt">
-  <ImgTipButton :link="this.project.link" :colors="this.colors" tooltip="View On GitHub" :img="this.gitImg"></ImgTipButton>
+  <img :src="project.image" :alt="project.imageAlt">
+  <ImgTipButton :link="project.link" :colors="colors" tooltip="View On GitHub" :img="gitImg"></ImgTipButton>
   <slot></slot>
 </div>
 

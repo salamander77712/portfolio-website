@@ -10,10 +10,10 @@ export default {
 
 <template>
   <span class='tooltip'>
-    <a :href="this.link" target="_blank">
-    <img :src="this.img">
+    <a :href="link" target="_blank">
+    <img :src="img">
     </a>
-    <p class='tooltiptext'>{{this.tooltip}}</p>
+    <p class='tooltiptext'>{{tooltip}}</p>
   </span>
 </template>
 
