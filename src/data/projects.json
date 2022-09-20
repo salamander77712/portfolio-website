@@ -14,12 +14,36 @@
             {
                 "name":"title",
                 "type":"string",
-                "value":"Test"
+                "value":"Crab App"
             },
             {
                 "name":"description",
                 "type":"string",
-                "value":"Bee Movie Script"
+                "value":"Simple clicker game about harvesting crabs written in Vue.js"
+            }
+        ]
+    },
+    {
+        "id":1,
+        "title":"Social Media Dapp",
+        "description":"Social media app that uses the ethereum network as a an immutable public database to store posts and other user data",
+        "image": "./assets/social-pic.png",
+        "imageAlt":"Image TBD",
+        "link":"https://github.com/salamander77712/Social-Media-DApp",
+        "secondButton":"true",
+        "secondLink":"https://social-media-dapp.web.app",
+        "secondTip" : "Open in Browser",
+        "secondImage":"./assets/placeholder.png",
+        "meta": [
+            {
+                "name":"title",
+                "type":"string",
+                "value":"Social Media Dapp"
+            },
+            {
+                "name":"description",
+                "type":"string",
+                "value":"Social media app that uses the ethereum network as a an immutable public database to store posts and other user data"
             }
         ]
     }
