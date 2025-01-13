@@ -2,7 +2,11 @@
 import ProjectDisplay from './components/ProjectDisplay.vue'
 import ProjectContainer from './components/ProjectContainer.vue'
 import ProjectSearch from './components/ProjectSearch.vue'
-//import settingsData from './data/settings.json'
+import { provide } from 'vue'
+import projectData from './data/projects.json';
+import settings from './data/settings.json';
+provide('projectData', projectData);
+provide('settings', settings);
 </script>
 <script>
 export default {
@@ -17,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <ProjectSearch></ProjectSearch>
+  <projectContainer></projectContainer>
 </template>
 
 <style scoped>

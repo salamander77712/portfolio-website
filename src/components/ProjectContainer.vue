@@ -1,10 +1,13 @@
 <script setup>
 import ProjectDisplay from './ProjectDisplay.vue';
 import ImgTipButton from './ImgTipButton.vue';
+import { inject } from 'vue'
+
+const projects = inject('projectData');
+const settings = inject('settings');
 </script>
 <script>
 export default {
-  props: ['settings', 'projects'],
   data() {
     return {
     }
@@ -15,8 +18,8 @@ export default {
 <template>
   <div class="container">
     <div v-for="project in projects" :key="project.id">
-      <ProjectDisplay :project="project" :colors="settings.colors" :gitImg="settings.gitImg">
-      <ImgTipButton v-if="project.secondButton" :colors="settings.colors" :link="project.secondLink" :tooltip="project.secondTip" :img="project.secondImage"></ImgTipButton>
+      <ProjectDisplay :project="project" >
+      <ImgTipButton v-if="project.secondButton" :link="project.secondLink" :tooltip="project.secondTip" :img="project.secondImage"></ImgTipButton>
       </ProjectDisplay>
     </div>
   </div>
@@ -25,7 +28,6 @@ export default {
 <style>
 .container{
   float:left;
-  background-color: v-bind(settings.colors[4]);
   width:100%;
   position: absolute;
   left: 0;

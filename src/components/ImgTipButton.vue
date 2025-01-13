@@ -1,6 +1,12 @@
+<script setup>
+import { inject } from 'vue'
+
+const settings = inject('settings');
+</script>
+
 <script>
 export default {
-  props: ['link', 'colors', 'tooltip', 'img'],
+  props: ['link', 'tooltip', 'img'],
   data() {
     return {
     }
@@ -18,6 +24,9 @@ export default {
 </template>
 
 <style scoped>
+a{
+  float: none;
+}
 a:hover{
   opacity: 0.5;
 }
@@ -28,8 +37,8 @@ a:hover{
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: v-bind(colors[2]);
-  color: v-bind(colors[1]);
+  background-color: v-bind(settings.colors[2]);
+  color: v-bind(settings.colors[1]);
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
