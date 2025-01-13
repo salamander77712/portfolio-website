@@ -2,6 +2,7 @@
 import ProjectDisplay from './components/ProjectDisplay.vue'
 import ProjectContainer from './components/ProjectContainer.vue'
 import ProjectSearch from './components/ProjectSearch.vue'
+import ContactHeader from './components/ContactHeader.vue'
 import { provide } from 'vue'
 import projectData from './data/projects.json';
 import settings from './data/settings.json';
@@ -15,13 +16,15 @@ export default {
     }
   },
   created(){
-    document.title = 'AHWW';
+    document.title = 'Alexander Wright';
   }
 }
 </script>
 
 <template>
-  <projectContainer></projectContainer>
+  <ContactHeader></ContactHeader>
+  <h1>Projects</h1>
+  <ProjectContainer></ProjectContainer>
 </template>
 
 <style scoped>
